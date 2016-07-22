@@ -16,14 +16,14 @@ public class RestTemplateConfiguration {
 	    @LoadBalanced
 	    @Bean
 	    RestTemplate loadBalanced() {
-			LOGGER.info("Initializing LoadBalanced RestTemplate");
+			LOGGER.info("Initializing   LoadBalanced RestTemplate");
 	        return new RestTemplate();
 	    }
 
 		@Profile("!PROD")
 	    @Bean
 	    RestTemplate restTemplate() {
-			LOGGER.info("Initializing Normal RestTemplate");
+			LOGGER.info("Initializing   Normal RestTemplate");
 	        return new RestTemplate();
 	    }
 	
