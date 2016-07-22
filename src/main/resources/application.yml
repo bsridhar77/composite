@@ -1,0 +1,6 @@
+server:
+  port: 1020
+
+
+atomic.service.url: http://localhost:1010/sayHello
+
